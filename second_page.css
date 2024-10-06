@@ -15,42 +15,17 @@ body {
 .company_box {
   display: flex;
   flex-direction: column;
-}
-.bar_box {
-  display: flex;
-  flex-direction: row-reverse;
-  background: linear-gradient(#62aaa6, #6a7a68);
-  border: 0.1px solid black;
-  width: 100%;
-  height: 55px;
+  text-align: center;
 }
 
-.post_box {
-  flex: 1;
-}
-.update {
-  margin-left: 30px;
-}
 .company_name {
-  display: inline-block;
   margin-left: 30px;
 }
-
 .icons {
-  margin-left: 55px;
+  margin-left: 14px;
   margin-bottom: -20px;
 }
 
-footer {
-  position: relative;
-  border: 1px solid black;
-  background: linear-gradient(#62aaa6, #6a7a68);
-  height: 80px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-}
 .social_box {
   display: flex;
   font-size: 28px;
@@ -68,9 +43,31 @@ footer {
   margin-bottom: 5px;
 }
 .inlägg {
-  /* border: 1px solid black;*/
   flex: 3;
 }
+.pic1 {
+  border: 1px solid black;
+  height: 290px;
+  width: 340px;
+  float: left;
+  margin-right: 10px;
+}
+.pic2 {
+  border: 1px solid black;
+  height: 215px;
+  width: 200px;
+  margin-left: 10px;
+  float: right;
+}
+.text1 {
+  text-align: justify;
+}
+.underline {
+  border-style: outset;
+  border-bottom: 8px solid #333;
+  width: auto;
+}
+
 .side_bar {
   display: flex;
   flex-direction: column;
@@ -79,11 +76,6 @@ footer {
   flex: 1;
 }
 
-.gallery {
-  border: 1px solid black;
-  height: 200px;
-  width: 200px;
-}
 .mini_bar {
   display: flex;
   flex-direction: column;
@@ -92,10 +84,6 @@ footer {
   text-align: center;
 }
 
-.line {
-  border-bottom: 1px solid #333;
-  width: 70%;
-}
 .text_info {
   display: inline-block;
   vertical-align: top;
@@ -115,7 +103,65 @@ footer {
 .search_bar {
   text-align: center;
 }
-.footer_box {
+
+.author {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  height: 180px;
+  width: 460px;
+}
+.author_me {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  background-color: #333;
+  border: 1px solid black;
+  flex: 2;
+}
+.author_pic {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.author_text {
+  background-color: #6a7a68;
+  border: 1px solid black;
+  flex: 3;
+}
+.author_text1 {
+  text-align: left;
+  margin-left: 5px;
+}
+.navbar1 {
+  padding: 22px;
+}
+
+.navbar1 a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+.navbar1 a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+footer {
+  position: relative;
+  border: 1px solid black;
+  background: linear-gradient(#62aaa6, #6a7a68);
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.footer_box1 {
   display: flex;
   flex-direction: column;
   height: 120px;
@@ -140,10 +186,7 @@ footer {
 .lower_footer {
   text-align: center;
 }
-.lower_footer p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
+
 @media (max-width: 700px) {
   .ramen_box {
     flex-direction: column;
